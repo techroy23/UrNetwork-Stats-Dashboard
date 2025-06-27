@@ -57,3 +57,6 @@ docker run -d \
   --name urnetwork-stats-dashboard \
   urnetwork-stats-dashboard
 ```
+
+## Preview
+![Screenshot](./image.png)
