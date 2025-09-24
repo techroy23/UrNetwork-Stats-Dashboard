@@ -54,7 +54,11 @@ docker build -t urnetwork-stats-dashboard .
 docker run -d \
   --env-file .env \
   -p 3000:3000 \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v /etc/timezone:/etc/timezone:ro \
+  -v urnetwork-stats-dashboard:/app/instance \
   --name urnetwork-stats-dashboard \
+  --restart always \
   urnetwork-stats-dashboard
 ```
 
